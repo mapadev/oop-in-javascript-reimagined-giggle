@@ -27,6 +27,12 @@ function Circle(radius) {
     };
 }
 
+// const newCircle = {};
+// newCircle.radius = 1;
+// newCircle.draw = function() {
+//     console.log("draw me some");
+// }
+
 const circle = createCircle(1);
 circle.draw();
 
