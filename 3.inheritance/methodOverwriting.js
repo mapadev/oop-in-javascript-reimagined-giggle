@@ -17,4 +17,13 @@ function Circle(radius, color) {
 
 extend(Circle, Shape);
 
+Circle.prototype.duplicate = function() {
+    console.log("duplicate circle");
+
+    // We can also call method on parent
+    Shape.prototype.duplicate.call(this);
+    // ...or without 'call' if no using this in method
+    Shape.prototype.duplicate();
+};
+
 const c = new Circle();
